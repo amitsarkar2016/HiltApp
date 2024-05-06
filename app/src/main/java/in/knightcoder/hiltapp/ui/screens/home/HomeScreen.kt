@@ -41,7 +41,7 @@ fun HomeScreen() {
                 )
             } else {
                 Text(
-                    text = homeResponse?.message ?: "No Data Found",
+                    text = homeResponse?.data?.message ?: "No Data Found",
                     modifier = Modifier.padding(16.dp),
                     style = MaterialTheme.typography.bodyMedium
                 )
